@@ -182,15 +182,6 @@
       - MagazineBoxRifleUranium
 
 - type: entity
-  id: AutoLathePrecise
-  parent: Autolathe
-  name: precise autolathe
-  description: It precisely produces items using less metal and glass.
-  components:
-  - type: Lathe
-    timeMultiplier: 4
-    materialUseMultiplier: 0.6
-- type: entity
   id: Protolathe
   parent: BaseLathe
   name: protolathe

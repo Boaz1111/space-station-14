@@ -67,12 +67,23 @@
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
   name: combat defibrillator
   components:
+   - type: Sprite
+      sprite: Objects/Specific/Medical/combatdefib.rsi
+      layers:
+        - state: icon
+        - state: screen
+          map: [ "enum.ToggleVisuals.Layer" ]
+          visible: false
+          shader: unshaded
+        - state: ready
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
+          shader: unshaded
   - type: PowerCellDraw
     useRate: 200
   - type: Item
     size: Medium
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/taser.rsi
+    sprite: Objects/Specific/Medical/combatdefib.rsi
     quickEquip: false
     slots:
     - Belt

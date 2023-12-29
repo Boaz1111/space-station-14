@@ -60,6 +60,10 @@
     solution: drink
   - type: StaticPrice
     price: 0
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
   - type: DamageOtherOnHit
     damage:
       types:
